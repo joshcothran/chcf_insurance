@@ -1,0 +1,175 @@
+body {
+	overflow: hidden;
+	font-size: 13px;
+	display:none;
+}
+
+hr {
+	border-top: 1px solid #BBB;
+	border-bottom: 0;
+	margin: 8px 0;
+}
+
+dl {
+	margin:0;
+}
+
+small {
+	font-size: 13px;
+}
+
+label.radio {
+	padding-left: 30px;
+}
+
+.lead {
+	margin-bottom: 10px;
+}
+
+.sidebar-section {
+	margin: 0 0 10px 10px;
+}
+
+.carrier-details-col-l {
+	display:inline-block;
+	width: 140px;
+	margin-right:10px;
+	vertical-align: text-top;
+}
+
+.carrier-details-col-r {
+	display:inline-block;
+	vertical-align: text-top;
+}
+
+#feature {
+	width: 960px;
+	margin: auto;
+}
+
+#header {
+	height: 60px;
+}
+
+#content {
+	overflow:hidden;
+}
+
+#viz {
+	float:right;
+	width: 625px;
+}
+
+#tabs {
+	height: 40px;
+}
+
+#chart {
+	height: 471px;
+	position:relative;
+}
+
+#sidebar {
+	margin-top: 40px;
+	overflow:hidden;
+	padding-right: 15px; 
+}
+
+#dimension_test {
+	position:absolute;
+	left:-10000px;
+	line-height:normal;
+}
+
+.node {
+	position: absolute;
+	overflow: hidden;
+	color: #FFFFFF;
+	display: table;
+	z-index:-1;
+}
+
+.node p {
+	display: table-cell; 
+	vertical-align: middle; 
+	text-align: center;
+	line-height: 18px;
+	margin: 0;
+}
+
+.node-title {
+	font-size: 17px;
+}
+
+.popover {
+	max-width: 400px;
+	z-index:1;
+	display:none;
+	filter: alpha(opacity=0); /* internet explorer */
+	-khtml-opacity: 0.0;      /* khtml, old safari */
+	-moz-opacity: 0.0;       /* mozilla, netscape */
+	opacity: 0.0;           /* fx, safari, opera */
+}
+
+.popover-title {
+	color: #FFFFFF;
+}
+
+.node-target {
+	position: absolute;
+	z-index:2;
+	background: #FFFFFF;
+	filter: alpha(opacity=0); /* internet explorer */
+	-khtml-opacity: 0.0;      /* khtml, old safari */
+	-moz-opacity: 0.0;       /* mozilla, netscape */
+	opacity: 0.0;           /* fx, safari, opera */
+	cursor:pointer;	
+}
+
+#notes_modal {
+	display:none;
+}
+
+.modal-body {
+	max-height: 350px;
+}
+
+#total_label {
+	margin:0;
+}
+
+#total_value {
+	margin:0;
+}
+
+
+/* TAB TWEAKS */
+
+.nav-tabs {
+	border-bottom: 1px solid #BBB;
+}
+
+ul.nav {
+	font-size:14px;
+}
+
+.nav-tabs li a {
+	background-color: #E7E7E7;
+	border: 1px solid #BBB;
+	
+}
+
+.nav-tabs li a:hover, .nav-tabs li a:focus {
+	background-color: #E3E3E3;
+	border: 1px solid #BBB;
+}
+
+.nav-tabs .active a, .nav-tabs .active a:hover, .nav-tabs .active a:focus {
+	border: 1px solid #BBB;
+	border-bottom-color: transparent;
+}
+
+#pill_list {
+	margin: 0;
+}
+

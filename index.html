@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>The Private Insurance Market in California, 2011</title>
+		
+		<!-- STYLESHEET INCLUDES -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="chcf.css" rel="stylesheet">
+		
+		<!-- JAVASCRIPT INCLUDES -->
+		<!-- IE8 Compatibility -->
+		<script>var animate = true;</script>
+		<!-- d34raphael | http://webmonarch.github.com/d34raphael/ -->
+		<!--[if lte IE 8]> 
+		<script type="text/javascript" src="lib/sizzle.js"></script> 
+		<script type="text/javascript" src="lib/compat.js"></script> 
+		<script>animate = false;</script>
+		<![endif]--> 
+		<script type="text/javascript" src="lib/raphael.js"></script> 
+		<script type="text/javascript" src="lib/d3.v2.js"></script>
+		<!-- jQuery | http://jquery.com/ -->
+		<script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+		<!-- Twitter Bootstrap | http://twitter.github.com/bootstrap/ -->
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<!-- underscore.js | http://documentcloud.github.com/underscore/ -->
+		<script type="text/javascript" src="lib/underscore-min.js"></script>
+		<script type="text/javascript" src="chcf.js"></script>
+		
+		<script>
+			$(document).ready(function() {
+				initGlobal();
+			})
+		</script>
+	</head>
+	<body>
+		<div id="feature">
+			<h3>The Private Insurance Market in California, 2011</h3>
+			<div id="content">
+				<div id="viz">
+					<div id="tabs">
+						<ul class="nav nav-tabs">
+							<li id="tab_total" class="tab active"><a href="javascript:setTab('total');">Total Enrollment</a></li>
+							<li id="tab_individual" class="tab"><a href="javascript:setTab('individual');">Individual Enrollment</a></li>
+							<li id="tab_group" class="tab"><a href="javascript:setTab('group');">Group Enrollment</a></li>
+							<li id="tab_revenues" class="tab"><a href="javascript:setTab('revenues');">California Revenues</a></li>							
+						</ul>						
+					</div>
+					<div id="chart"><!-- Treemap --></div>	
+				</div>
+							
+				<div id="sidebar">
+					<h4 id="total_label">Total <span id="total_regulator">&nbsp;</span> <span id="total_dimension">&nbsp;</span></h4>
+					<h3 id="total_value">20,483,403</h3>
+					<hr />	
+					<h5>Filter by Regulator</h5>
+					<ul id="pill_list" class="nav nav-pills nav-stacked">
+							<li id="pill_both" class="pill active"><a href="javascript:setRegulator('both');">
+								Both Regulators</a></li>
+							<li id="pill_cdi" class="pill"><a href="javascript:setRegulator('cdi');">
+								California Department of Insurance (CDI)</a></li>
+							<li id="pill_dmhc" class="pill"><a href="javascript:setRegulator('dmhc');">
+								Department of Managed Healthcare (DMHC)</a></li>					
+					</ul>
+					<hr />	
+					<p><small>
+						This interactive graphic shows commercial enrollment in California’s largest health insurance carriers. 
+						It also provides a look at the state’s revenues for all enrollment, both public and commercial, and from other insurance services and products.
+					</small></p>
+					<p><small>
+						The DMHC regulates HMOs, and the CDI oversees most PPOs and traditional fee-for-service plans.					
+					</small></p>
+					<p><small>
+						Total enrollment reflects individual and group enrollment only.
+					</small></p>
+					<p>
+						<i class="icon-book"><!-- Book Icon --></i> 
+						<a id="notes_link" href="#">Sources</a>
+					</p>									
+				</div>
+			</div>
+		</div>
+		
+		<div id="tt" class="popover">
+			<h3 id="tt_title" class="popover-title">&nbsp;</h3>
+			<div class="popover-content">
+				<div class="carrier-details-col-l">
+					<dl>
+						<dt>Total Enrollment</dt>
+						<dd id="tt_total">&nbsp;</dd>
+						<dt>Individual Enrollment</dt>
+						<dd id="tt_individual">&nbsp;</dd>
+						<dt>Group Enrollment</dt>
+						<dd id="tt_group">&nbsp;</dd>
+					</dl>
+				</div>
+				<div class="carrier-details-col-r">
+					<dl>
+						<dt>Total CA Revenues</dt>
+						<dd id="tt_revenues">&nbsp;</dd>
+						<dt>Total Margin</dt>
+						<dd id="tt_margin">&nbsp;</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		
+		<div id="notes_modal" class="modal hide fade">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4>Sources</h4>
+			</div>
+			<div class="modal-body">
+				<strong>California Department of Insurance (CDI)</strong>
+				<ul>
+					<li><a href="http://www.insurance.ca.gov/0100-consumers/0030-licensee-info/0010-search-company-profile/" target="_blank">
+						Insurers’ Annual Statements, 2011</a></li>
+					<li>Statistical Analysis Division, Group &amp; Individual Covered Lives for Comprehensive Major Medical, 2011</li>
+					<li><a href="http://www.insurance.ca.gov/0400-news/0200-studies-reports/0100-market-share/" target="_blank">
+						California Life &amp; Annuity Market Share Report, Exhibit 4D, 2011</a></li>		
+				</ul>
+				<strong>Department of Managed Health Care (DMHC)</strong>
+				<ul>
+					<li><a href="http://wpso.dmhc.ca.gov/flash/" target="_blank">
+						Health Plan Financial Summary Data</a></li>
+					<li><a href="http://www.hmohelp.ca.gov/healthplans/rep/rep_financial.aspx" target="_blank">
+						Health Plan Financial Statements</a></li>
+					<li><a href="http://www.hmohelp.ca.gov/healthplans/gen/gen_licensed.aspx" target="_blank">
+						Licensed Plans List</a></li>	
+				</ul>
+			</div>
+		</div>					
+		<div id="dimension_test"><!-- Dimension Test --></div>
+	</body>
+</html>

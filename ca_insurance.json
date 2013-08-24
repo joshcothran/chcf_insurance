@@ -1,0 +1,435 @@
+{
+    "tree": {
+        "id": "carriers",
+        "children": [
+            {
+                "id": "aetna"
+            },
+            {
+                "id": "other"
+            },
+            {
+                "id": "anthem"
+            },
+            {
+                "id": "blue_shield"
+            },
+            {
+                "id": "cigna"
+            },
+            {
+                "id": "health_net"
+            },
+            {
+                "id": "kaiser"
+            },
+            {
+                "id": "united"
+            }
+        ]
+    },
+    "data": {
+        "aetna": {
+            "name": "Aetna",
+            "color": "#89A8D3",
+            "cdi": {
+                "total": 312705,
+                "individual": 80424,
+                "group": 232281,
+                "revenues": 1.74281893,
+                "margin": "8.07%"
+            },
+            "dmhc": {
+                "total": 373788,
+                "individual": 0,
+                "group": 373788,
+                "revenues": 1.800936239,
+                "margin": "5.62%"
+            },
+            "both": {
+                "total": 686493,
+                "individual": 80424,
+                "group": 606069,
+                "revenues": 3.543755169,
+                "margin": "CDI: 8.07%, <br/>DMHC: 5.62%"
+            }
+        },
+        "anthem": {
+            "name": "Anthem Blue Cross",
+            "color": "#EA8F22",
+            "cdi": {
+                "total": 1001141,
+                "individual": 613082,
+                "group": 388059,
+                "revenues": 5.735549572,
+                "margin": "3.54%"
+            },
+            "dmhc": {
+                "total": 1895506,
+                "individual": 127972,
+                "group": 1767534,
+                "revenues": 11.11891,
+                "margin": "4.57%"
+            },
+            "both": {
+                "total": 2896647,
+                "individual": 741054,
+                "group": 2155593,
+                "revenues": 16.854459572,
+                "margin": "CDI: 3.54%, <br/>DMHC: 4.57%"
+            }
+        },
+        "blue_shield": {
+            "name": "Blue Shield",
+            "color": "#5782C2",
+            "cdi": {
+                "total": 509326,
+                "individual": 274554,
+                "group": 234772,
+                "revenues": 1.396696109,
+                "margin": "-2.97%"
+            },
+            "dmhc": {
+                "total": 1628186,
+                "individual": 52761,
+                "group": 1575425,
+                "revenues": 8.33476,
+                "margin": "0.94%"
+            },
+            "both": {
+                "total": 2137512,
+                "individual": 327315,
+                "group": 1810197,
+                "revenues": 9.731456109,
+                "margin": "CDI: -2.97%, <br/>DMHC: 0.94%"
+            }
+        },
+        "cigna": {
+            "name": "CIGNA",
+            "color": "#9AA189",
+            "cdi": {
+                "total": 289652,
+                "individual": 9521,
+                "group": 280131,
+                "revenues": 0.875563262,
+                "margin": "7.98%"
+            },
+            "dmhc": {
+                "total": 230399,
+                "individual": 143,
+                "group": 230256,
+                "revenues": 0.944467233,
+                "margin": "-0.05%"
+            },
+            "both": {
+                "total": 520051,
+                "individual": 9664,
+                "group": 510387,
+                "revenues": 1.820030495,
+                "margin": "CDI: 7.98%, <br/>DMHC: -0.05%"
+            }
+        },
+        "health_net": {
+            "name": "Health Net",
+            "color": "#596337",
+            "cdi": {
+                "total": 163926,
+                "individual": 51713,
+                "group": 112213,
+                "revenues": 1.120871082,
+                "margin": "1.73%"
+            },
+            "dmhc": {
+                "total": 944031,
+                "individual": 3163,
+                "group": 940868,
+                "revenues": 9.467777166,
+                "margin": "1.91%"
+            },
+            "both": {
+                "total": 1107957,
+                "individual": 54876,
+                "group": 1053081,
+                "revenues": 10.588648248,
+                "margin": "CDI: 1.73%, <br/>DMHC: 1.91%"
+            }
+        },
+        "kaiser": {
+            "name": "Kaiser",
+            "color": "#B94D27",
+            "cdi": {
+                "total": 54261,
+                "individual": 0,
+                "group": 54261,
+                "revenues": 0.163643535,
+                "margin": "1.19%"
+            },
+            "dmhc": {
+                "total": 5729534,
+                "individual": 298958,
+                "group": 5430576,
+                "revenues": 37.27151813,
+                "margin": "4.16%"
+            },
+            "both": {
+                "total": 5783795,
+                "individual": 298958,
+                "group": 5484837,
+                "revenues": 37.435161665,
+                "margin": "CDI: 1.19%, <br/>DMHC: 4.16%"
+            }
+        },
+        "other": {
+            "name": "All Other",
+            "color": "#B3AB46",
+            "cdi": {
+                "total": 114772,
+                "individual": 44874,
+                "group": 69898,
+                "revenues": 5.908045927,
+                "margin": " n/a"
+            },
+            "dmhc": {
+                "total": 592161,
+                "individual": 1830,
+                "group": 590331,
+                "revenues": 16.72574575,
+                "margin": " n/a"
+            },
+            "both": {
+                "total": 706933,
+                "individual": 46704,
+                "group": 660229,
+                "revenues": 22.633791677,
+                "margin": "n/a"
+            }
+        },
+        "united": {
+            "name": "UnitedHealthcare",
+            "color": "#CA795D",
+            "cdi": {
+                "total": 173506,
+                "individual": 0,
+                "group": 173506,
+                "revenues": 1.859897381,
+                "margin": "5.74%"
+            },
+            "dmhc": {
+                "total": 548285,
+                "individual": 5050,
+                "group": 543235,
+                "revenues": 6.41972,
+                "margin": "4.20%"
+            },
+            "both": {
+                "total": 721791,
+                "individual": 5050,
+                "group": 716741,
+                "revenues": 8.279617381,
+                "margin": "CDI: 5.74%, <br/>DMHC: 4.20%"
+            }
+        }
+    },
+    "tree_data": {
+        "aetna": {
+            "name": "Aetna",
+            "color": "#89A8D3",
+            "cdi": {
+                "total": 312705,
+                "individual": 80424,
+                "group": 232281,
+                "revenues": 1.74281893,
+                "margin": "8.07%"
+            },
+            "dmhc": {
+                "total": 373788,
+                "individual": 0,
+                "group": 373788,
+                "revenues": 3,
+                "margin": "5.62%"
+            },
+            "both": {
+                "total": 686493,
+                "individual": 80424,
+                "group": 606069,
+                "revenues": 3.543755169,
+                "margin": "CDI: 8.07%, <br/>DMHC: 5.62%"
+            }
+        },
+        "anthem": {
+            "name": "Anthem Blue Cross",
+            "color": "#EA8F22",
+            "cdi": {
+                "total": 1001141,
+                "individual": 613082,
+                "group": 388059,
+                "revenues": 5.735549572,
+                "margin": "3.54%"
+            },
+            "dmhc": {
+                "total": 1895506,
+                "individual": 127972,
+                "group": 1767534,
+                "revenues": 11.11891,
+                "margin": "4.57%"
+            },
+            "both": {
+                "total": 2896647,
+                "individual": 741054,
+                "group": 2155593,
+                "revenues": 16.854459572,
+                "margin": "CDI: 3.54%, <br/>DMHC: 4.57%"
+            }
+        },
+        "blue_shield": {
+            "name": "Blue Shield",
+            "color": "#5782C2",
+            "cdi": {
+                "total": 509326,
+                "individual": 274554,
+                "group": 234772,
+                "revenues": 1.396696109,
+                "margin": "-2.97%"
+            },
+            "dmhc": {
+                "total": 1628186,
+                "individual": 52761,
+                "group": 1575425,
+                "revenues": 8.33476,
+                "margin": "0.94%"
+            },
+            "both": {
+                "total": 2137512,
+                "individual": 327315,
+                "group": 1810197,
+                "revenues": 9.731456109,
+                "margin": "CDI: -2.97%, <br/>DMHC: 0.94%"
+            }
+        },
+        "cigna": {
+            "name": "CIGNA",
+            "color": "#9AA189",
+            "cdi": {
+                "total": 289652,
+                "individual": 9521,
+                "group": 280131,
+                "revenues": 0.875563262,
+                "margin": "7.98%"
+            },
+            "dmhc": {
+                "total": 230399,
+                "individual": 1100,
+                "group": 230256,
+                "revenues": 1.9,
+                "margin": "-0.05%"
+            },
+            "both": {
+                "total": 520051,
+                "individual": 20000,
+                "group": 510387,
+                "revenues": 2.4,
+                "margin": "CDI: 7.98%, <br/>DMHC: -0.05%"
+            }
+        },
+        "health_net": {
+            "name": "Health Net",
+            "color": "#596337",
+            "cdi": {
+                "total": 163926,
+                "individual": 51713,
+                "group": 112213,
+                "revenues": 1.120871082,
+                "margin": "1.73%"
+            },
+            "dmhc": {
+                "total": 944031,
+                "individual": 6326,
+                "group": 940868,
+                "revenues": 9.467777166,
+                "margin": "1.91%"
+            },
+            "both": {
+                "total": 1107957,
+                "individual": 54876,
+                "group": 1053081,
+                "revenues": 10.588648248,
+                "margin": "CDI: 1.73%, <br/>DMHC: 1.91%"
+            }
+        },
+        "kaiser": {
+            "name": "Kaiser",
+            "color": "#B94D27",
+            "cdi": {
+                "total": 80000,
+                "individual": 0,
+                "group": 54261,
+                "revenues": 0.4,
+                "margin": "1.19%"
+            },
+            "dmhc": {
+                "total": 5729534,
+                "individual": 298958,
+                "group": 5430576,
+                "revenues": 37.27151813,
+                "margin": "4.16%"
+            },
+            "both": {
+                "total": 5783795,
+                "individual": 298958,
+                "group": 5484837,
+                "revenues": 37.435161665,
+                "margin": "CDI: 1.19%, <br/>DMHC: 4.16%"
+            }
+        },
+        "other": {
+            "name": "All Other",
+            "color": "#B3AB46",
+            "cdi": {
+                "total": 114772,
+                "individual": 44874,
+                "group": 69898,
+                "revenues": 5.908045927,
+                "margin": " n/a"
+            },
+            "dmhc": {
+                "total": 592161,
+                "individual": 3660,
+                "group": 590331,
+                "revenues": 16.72574575,
+                "margin": " n/a"
+            },
+            "both": {
+                "total": 706933,
+                "individual": 46704,
+                "group": 660229,
+                "revenues": 22.633791677,
+                "margin": "n/a"
+            }
+        },
+        "united": {
+            "name": "UnitedHealthcare",
+            "color": "#CA795D",
+            "cdi": {
+                "total": 173506,
+                "individual": 0,
+                "group": 173506,
+                "revenues": 1.859897381,
+                "margin": "5.74%"
+            },
+            "dmhc": {
+                "total": 548285,
+                "individual": 10100,
+                "group": 543235,
+                "revenues": 6.41972,
+                "margin": "4.20%"
+            },
+            "both": {
+                "total": 721791,
+                "individual": 11000,
+                "group": 716741,
+                "revenues": 8.279617381,
+                "margin": "CDI: 5.74%, <br/>DMHC: 4.20%"
+            }
+        }
+    }
+}
