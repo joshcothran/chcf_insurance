@@ -61,7 +61,7 @@ label.radio {
 }
 
 #tabs {
-	height: 40px;
+	height: 58px;
 }
 
 #chart {
@@ -70,9 +70,9 @@ label.radio {
 }
 
 #sidebar {
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 	overflow:hidden;
-	padding-right: 15px; 
+	padding-right: 15px;
 }
 
 #dimension_test {
@@ -90,8 +90,8 @@ label.radio {
 }
 
 .node p {
-	display: table-cell; 
-	vertical-align: middle; 
+	display: table-cell;
+	vertical-align: middle;
 	text-align: center;
 	line-height: 18px;
 	margin: 0;
@@ -123,10 +123,10 @@ label.radio {
 	-khtml-opacity: 0.0;      /* khtml, old safari */
 	-moz-opacity: 0.0;       /* mozilla, netscape */
 	opacity: 0.0;           /* fx, safari, opera */
-	cursor:pointer;	
+	cursor:pointer;
 }
 
-#notes_modal {
+#notes_modal, #sources_modal {
 	display:none;
 }
 
@@ -140,33 +140,48 @@ label.radio {
 
 #total_value {
 	margin:0;
+	line-height: 32px;
 }
 
+.modal-backdrop {
+	background-color: #FFF;
+}
+
+.modal-backdrop, .modal-backdrop.fade.in {
+	opacity: 0.5;
+}
 
 /* TAB TWEAKS */
 
 .nav-tabs {
-	border-bottom: 1px solid #BBB;
+	border-bottom: 1px solid #999;
 }
 
 ul.nav {
 	font-size:14px;
 }
 
+.nav-tabs li {
+	margin-right:4px;
+}
+
 .nav-tabs li a {
-	background-color: #E7E7E7;
-	border: 1px solid #BBB;
-	
+	background-color: #F0F0F0;
+	border: 1px solid #AAA;
+
+
 }
 
 .nav-tabs li a:hover, .nav-tabs li a:focus {
-	background-color: #E3E3E3;
-	border: 1px solid #BBB;
+	background-color: #E7E7E7;
+	border: 1px solid #999;
+	color:#0088CC;
 }
 
 .nav-tabs .active a, .nav-tabs .active a:hover, .nav-tabs .active a:focus {
-	border: 1px solid #BBB;
+	border: 1px solid #999;
 	border-bottom-color: transparent;
+	color: #333;
 }
 
 #pill_list {
