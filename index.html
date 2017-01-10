@@ -1,193 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>The Private Insurance Market in California, 2013</title>
 
-		<!-- STYLESHEET INCLUDES -->
-		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="chcf.css" rel="stylesheet">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>The Private Insurance Market in California, 2013</title>
 
-		<!-- JAVASCRIPT INCLUDES -->
-		<!-- IE8 Compatibility -->
-		<script>var animate = true;</script>
-		<!-- d34raphael | http://webmonarch.github.com/d34raphael/ -->
-		<!--[if lte IE 8]>
-		<script type="text/javascript" src="lib/sizzle.js"></script>
-		<script type="text/javascript" src="lib/compat.js"></script>
-		<script>animate = false;</script>
-		<![endif]-->
-		<script type="text/javascript" src="lib/raphael.js"></script>
-		<script type="text/javascript" src="lib/d3.v2.js"></script>
-		<!-- jQuery | http://jquery.com/ -->
-		<script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
-		<!-- Twitter Bootstrap | http://twitter.github.com/bootstrap/ -->
-		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-		<!-- underscore.js | http://documentcloud.github.com/underscore/ -->
-		<script type="text/javascript" src="lib/underscore-min.js"></script>
-		<script type="text/javascript" src="chcf.js"></script>
+  <!-- STYLESHEET INCLUDES -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="chcf.css" rel="stylesheet" />
 
-		<script>
-			$(document).ready(function() {
-				initGlobal();
-			})
-		</script>
-	</head>
-	<body>
-		<div id="feature">
-			<h3>The Private Insurance Market in California, 2013</h3>
-			<div id="content">
-				<div id="viz">
-					<div id="tabs">
-						<ul class="nav nav-tabs">
-                            <li id="tab_total" class="tab active"><a href="javascript:setTab('total');">Total<br/>Enrollment*</a></li>
-							<li id="tab_individual" class="tab"><a href="javascript:setTab('individual');">Individual<br/>Enrollment</a></li>
-							<li id="tab_group_sm" class="tab"><a href="javascript:setTab('group_sm');">Small Group<br/>Enrollment</a></li>
-                            <li id="tab_group_lg" class="tab"><a href="javascript:setTab('group_lg');">Large Group<br/>Enrollment</a></li>
-                            <li id="tab_aso" class="tab"><a href="javascript:setTab('aso');">Self-<br/>Insured</a></li>
-							<li id="tab_revenues" class="tab"><a href="javascript:setTab('revenues');">California<br/>Revenues</a></li>
-						</ul>
-					</div>
-					<div id="chart"><!-- Treemap --></div>
-				</div>
+  <!-- JAVASCRIPT INCLUDES -->
+  <script type="text/javascript" src="lib/raphael.js"></script>
+  <script type="text/javascript" src="lib/d3.v2.js"></script>
+  <!-- jQuery | http://jquery.com/ -->
+  <script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+  <!-- Twitter Bootstrap | http://twitter.github.com/bootstrap/ -->
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <!-- underscore.js | http://documentcloud.github.com/underscore/ -->
+  <script type="text/javascript" src="lib/underscore-min.js"></script>
+  <script type="text/javascript" src="chcf.js"></script>
 
-				<div id="sidebar">
-					<h4 id="total_label"></h4>
-					<h3 id="total_value">20,483,403</h3>
-					<hr />
-					<h5>Filter by Regulator</h5>
-					<ul id="pill_list" class="nav nav-pills nav-stacked">
-							<li id="pill_both" class="pill active"><a href="javascript:setRegulator('both');">
-								Both Regulators</a></li>
-							<li id="pill_cdi" class="pill"><a href="javascript:setRegulator('cdi');">
-								California Department of Insurance (CDI)</a></li>
-							<li id="pill_dmhc" class="pill"><a href="javascript:setRegulator('dmhc');">
-								Department of Managed Health Care (DMHC)</a></li>
-					</ul>
-					<hr />
-					<p><small>
-						This interactive graphic shows commercial enrollment in California’s largest health insurance carriers.
-						It also provides a look at the state’s revenues for all enrollment, both public and commercial, and from other insurance services and products.
-					</small></p>
-					<p><small>
-						The DMHC regulates mainly HMOs, and the CDI oversees most PPOs and traditional fee-for-service plans.
-					</small></p>
-					<p><small>
-						*Total enrollment reflects individual, small group, and large group enrollment only.
-					</small></p>
-					<p>
-						<i class="icon-list"><!-- Book Icon --></i>
-						<a id="sources_link" href="#">Sources</a>
+  <script>
+    $(document).ready(function () {
+      initGlobal();
+    })
+  </script>
+</head>
 
-						&nbsp;
-
-						<i class="icon-book"><!-- Book Icon --></i>
-                        <a id="notes_link" href="#">Definitions &amp; Notes</a>
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<div id="tt" class="popover">
-			<h3 id="tt_title" class="popover-title">&nbsp;</h3>
-			<div class="popover-content">
-    			<div>
-                    <div class="carrier-details-col-l">
-                        <dl>
-                            <dt>Total Enrollment</dt>
-                            <dd id="tt_total">&nbsp;</dd>
-                            <dt>Individual Enrollment</dt>
-                            <dd id="tt_individual">&nbsp;</dd>
-                        </dl>
-                    </div>
-                    <div class="carrier-details-col-r">
-                        <dl>
-                            <dt>Sm. Group Enrollment</dt>
-                            <dd id="tt_group_sm">&nbsp;</dd>
-                            <dt>Lg. Group Enrollment</dt>
-                            <dd id="tt_group_lg">&nbsp;</dd>
-                        </dl>
-                    </div>
-                </div>
-                <hr/>
-                <div>
-                    <div class="carrier-details-col-l">
-                        <dl>
-                            <dt style>Self-Insured</dt>
-                            <dd id="tt_aso">&nbsp;</dd>
-                        </dl>
-                    </div>
-                    <div class="carrier-details-col-r">
-                        <dl>
-                            <dt>California Revenues</dt>
-                            <dd id="tt_revenues">&nbsp;</dd>
-                        </dl>
-                    </div>
-                </div>
-                <div>
-                    <dl>
-                        <dt>Margin (net income as percent of revenue)</dt>
-                        <dd id="tt_margin">&nbsp;</dd>
-                    </dl>
-                </div>
-            </div>
-		</div>
-
-		<div id="sources_modal" class="modal hide fade">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4>Sources</h4>
-			</div>
-			<div class="modal-body">
-				<h5>California Department of Insurance (CDI)</h5>
-				<ul>
-					<li><a href="http://www.insurance.ca.gov/01-consumers/110-health/coveredlivesrpt.cfm" target="_blank">
-						Covered Lives Report, 2013</a></li>
-                    <li><a href="https://interactive.web.insurance.ca.gov/companyprofile/companyprofile" target="_blank">
-                        Insurers’ Annual Statements, 2013</a></li>
-					<li><a href="http://www.insurance.ca.gov/01-consumers/120-company/04-mrktshare/index.cfm" target="_blank">
-						California Life &amp; Annuity Market Share Report, Exhibit 4D, 2013</a></li>
-				</ul>
-				<h5>Department of Managed Health Care (DMHC)</h5>
-				<ul>
-					<li><a href="https://www.dmhc.ca.gov/DataResearch/FinancialSummaryData.aspx" target="_blank">
-						Enrollment Summary Report, 2013</a></li>
-					<li><a href="http://wpso.dmhc.ca.gov/flash/" target="_blank">
-						Health Plan Financial Summary Data</a></li>
-					<li><a href="http://wpso.dmhc.ca.gov/hpsearch/viewLicensedHealthPlan.aspx" target="_blank">
-						Licensed Plans List</a></li>
-				</ul>
-			</div>
-		</div>
-
-		<div id="notes_modal" class="modal hide fade">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4>Definitions &amp; Notes</h4>
-            </div>
-            <div class="modal-body">
-                <h5>Definitions</h5>
-                <ul>
-                    <li><strong>Total Enrollment</strong> &mdash; Individual + Small Group + Large Group enrollment.</li>
-                    <li><strong>Individual Enrollment</strong> &mdash; Number of enrollees covered by individually purchased private health insurance.  Excludes employer-sponsored, public coverage such as Medicare or Medi-Cal and their managed care programs, and private supplemental Medicare insurance.</li>
-                    <li><strong>Small Group Enrollment</strong> &mdash; Number of enrollees receiving health insurance from an employer with 50 or fewer workers.</li>
-                    <li><strong>Large Group Enrollment</strong> &mdash; Number of enrollees receiving health insurance from an employer with 51 or more workers.</li>
-                    <li><strong>Self-Insured</strong> &mdash; Number of enrollees covered by self-insured employers, who assume the financial responsibility for paying claims and contract with an insurance company for administrative services only (ASO).  Also known as ASO enrollment. </li>
-                    <li><strong>California Revenues</strong> &mdash; Includes premiums for Accident and Health business under CDI and total revenues under DMHC.</li>
-                </ul>
-
-                <h5>Notes</h5>
-                <p>
-                    Health Net figures under DMHC include Health Net Community Solutions.  Cigna figures under CDI include Connecticut General and Cigna Health and Life.  UnitedHealthcare figures under CDI include PacifiCare.
-                </p>
-                <p>
-                    For additional information, see the CHCF publication,
-                    <a href="http://www.chcf.org/publications/2015/02/california-health-plans-insurers" target="_blank">
-                        <em>California Health Insurers: Brink of Change</em></a>.
-                </p>
-            </div>
+<body>
+  <div id="feature">
+    <h3>The Private Insurance Market in California, 2013</h3>
+    <div id="content">
+      <div id="viz">
+        <div id="tabs">
+          <ul class="nav nav-tabs">
+            <li id="tab_total" class="tab active">
+              <a href="javascript:setTab('total');">Total<br/>Enrollment*</a></li>
+            <li id="tab_individual" class="tab">
+              <a href="javascript:setTab('individual');">Individual<br/>Enrollment</a></li>
+            <li id="tab_group_sm" class="tab">
+              <a href="javascript:setTab('group_sm');">Small Group<br/>Enrollment</a></li>
+            <li id="tab_group_lg" class="tab">
+              <a href="javascript:setTab('group_lg');">Large Group<br/>Enrollment</a></li>
+            <li id="tab_aso" class="tab">
+              <a href="javascript:setTab('aso');">Self-<br/>Insured</a></li>
+            <li id="tab_revenues" class="tab">
+              <a href="javascript:setTab('revenues');">California<br/>Revenues</a></li>
+          </ul>
         </div>
+        <div id="chart">
+          <!-- Treemap -->
+        </div>
+      </div>
 
-		<div id="dimension_test"><!-- Dimension Test --></div>
-	</body>
+      <div id="sidebar">
+        <h4 id="total_label"></h4>
+        <h3 id="total_value">20,483,403</h3>
+        <hr />
+        <h5>Filter by Regulator</h5>
+        <ul id="pill_list" class="nav nav-pills nav-stacked">
+          <li id="pill_both" class="pill active"><a href="javascript:setRegulator('both');">
+                Both Regulators</a></li>
+          <li id="pill_cdi" class="pill"><a href="javascript:setRegulator('cdi');">
+                California Department of Insurance (CDI)</a></li>
+          <li id="pill_dmhc" class="pill"><a href="javascript:setRegulator('dmhc');">
+                Department of Managed Health Care (DMHC)</a></li>
+        </ul>
+        <hr />
+        <p><small>
+            This interactive graphic shows commercial enrollment in California’s largest health insurance carriers.
+            It also provides a look at the state’s revenues for all enrollment, both public and commercial, and from other insurance services and products.
+          </small></p>
+        <p><small>
+            The DMHC regulates mainly HMOs, and the CDI oversees most PPOs and traditional fee-for-service plans.
+          </small></p>
+        <p><small>
+            *Total enrollment reflects individual, small group, and large group enrollment only.
+          </small></p>
+        <p>
+          <i class="icon-list"><!-- Book Icon --></i>
+          <a id="sources_link" href="#">Sources</a> &nbsp;
+
+          <i class="icon-book"><!-- Book Icon --></i>
+          <a id="notes_link" href="#">Definitions &amp; Notes</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="tt" class="popover">
+    <h3 id="tt_title" class="popover-title">&nbsp;</h3>
+    <div class="popover-content">
+      <div>
+        <div class="carrier-details-col-l">
+          <dl>
+            <dt>Total Enrollment</dt>
+            <dd id="tt_total">&nbsp;</dd>
+            <dt>Individual Enrollment</dt>
+            <dd id="tt_individual">&nbsp;</dd>
+          </dl>
+        </div>
+        <div class="carrier-details-col-r">
+          <dl>
+            <dt>Sm. Group Enrollment</dt>
+            <dd id="tt_group_sm">&nbsp;</dd>
+            <dt>Lg. Group Enrollment</dt>
+            <dd id="tt_group_lg">&nbsp;</dd>
+          </dl>
+        </div>
+      </div>
+      <hr/>
+      <div>
+        <div class="carrier-details-col-l">
+          <dl>
+            <dt style>Self-Insured</dt>
+            <dd id="tt_aso">&nbsp;</dd>
+          </dl>
+        </div>
+        <div class="carrier-details-col-r">
+          <dl>
+            <dt>California Revenues</dt>
+            <dd id="tt_revenues">&nbsp;</dd>
+          </dl>
+        </div>
+      </div>
+      <div>
+        <dl>
+          <dt>Margin (net income as percent of revenue)</dt>
+          <dd id="tt_margin">&nbsp;</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div id="sources_modal" class="modal hide fade">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4>Sources</h4>
+    </div>
+    <div class="modal-body">
+      <h5>California Department of Insurance (CDI)</h5>
+      <ul>
+        <li><a href="http://www.insurance.ca.gov/01-consumers/110-health/coveredlivesrpt.cfm" target="_blank">
+            Covered Lives Report, 2013</a></li>
+        <li><a href="https://interactive.web.insurance.ca.gov/companyprofile/companyprofile" target="_blank">
+                        Insurers’ Annual Statements, 2013</a></li>
+        <li><a href="http://www.insurance.ca.gov/01-consumers/120-company/04-mrktshare/index.cfm" target="_blank">
+            California Life &amp; Annuity Market Share Report, Exhibit 4D, 2013</a></li>
+      </ul>
+      <h5>Department of Managed Health Care (DMHC)</h5>
+      <ul>
+        <li><a href="https://www.dmhc.ca.gov/DataResearch/FinancialSummaryData.aspx" target="_blank">
+            Enrollment Summary Report, 2013</a></li>
+        <li><a href="http://wpso.dmhc.ca.gov/flash/" target="_blank">
+            Health Plan Financial Summary Data</a></li>
+        <li><a href="http://wpso.dmhc.ca.gov/hpsearch/viewLicensedHealthPlan.aspx" target="_blank">
+            Licensed Plans List</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="notes_modal" class="modal hide fade">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      <h4>Definitions &amp; Notes</h4>
+    </div>
+    <div class="modal-body">
+      <h5>Definitions</h5>
+      <ul>
+        <li>
+          <strong>Total Enrollment</strong> &mdash; Individual + Small Group + Large Group enrollment.</li>
+        <li>
+          <strong>Individual Enrollment</strong> &mdash; Number of enrollees covered by individually purchased private health insurance. Excludes employer-sponsored, public coverage such as Medicare or Medi-Cal and their managed care programs, and private supplemental Medicare insurance.</li>
+        <li>
+          <strong>Small Group Enrollment</strong> &mdash; Number of enrollees receiving health insurance from an employer with 50 or fewer workers.</li>
+        <li>
+          <strong>Large Group Enrollment</strong> &mdash; Number of enrollees receiving health insurance from an employerwith 51 or more workers.</li>
+        <li>
+          <strong>Self-Insured</strong> &mdash; Number of enrollees covered by self-insured employers, who assume the financial responsibility for paying claims and contract with an insurance company for administrative services only (ASO). Also known as ASO enrollment. </li>
+        <li>
+          <strong>California Revenues</strong> &mdash; Includes premiums for Accident and Health business under CDI and total revenues under DMHC.</li>
+      </ul>
+
+      <h5>Notes</h5>
+      <p>
+        Health Net figures under DMHC include Health Net Community Solutions. Cigna figures under CDI include Connecticut General and Cigna Health and Life. UnitedHealthcare figures under CDI include PacifiCare.
+      </p>
+      <p>
+        For additional information, see the CHCF publication,
+        <a href="http://www.chcf.org/publications/2015/02/california-health-plans-insurers" target="_blank">
+          <em>California Health Insurers: Brink of Change</em></a>.
+      </p>
+    </div>
+  </div>
+
+  <div id="dimension_test">
+    <!-- Dimension Test -->
+  </div>
+</body>
+
 </html>

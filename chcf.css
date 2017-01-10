@@ -1,190 +1,193 @@
 body {
-	overflow: hidden;
-	font-size: 13px;
-	display:none;
+  overflow: hidden;
+  font-size: 13px;
+  display: none;
 }
 
 hr {
-	border-top: 1px solid #BBB;
-	border-bottom: 0;
-	margin: 8px 0;
+  border-top: 1px solid #bbb;
+  border-bottom: 0;
+  margin: 8px 0;
 }
 
 dl {
-	margin:0;
+  margin: 0;
 }
 
 small {
-	font-size: 13px;
+  font-size: 13px;
 }
 
 label.radio {
-	padding-left: 30px;
+  padding-left: 30px;
 }
 
 .lead {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .sidebar-section {
-	margin: 0 0 10px 10px;
+  margin: 0 0 10px 10px;
 }
 
 .carrier-details-col-l {
-	display:inline-block;
-	width: 140px;
-	margin-right:10px;
-	vertical-align: text-top;
+  display: inline-block;
+  width: 140px;
+  margin-right: 10px;
+  vertical-align: text-top;
 }
 
 .carrier-details-col-r {
-	display:inline-block;
-	vertical-align: text-top;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
 #feature {
-	width: 960px;
-	margin: auto;
+  width: 960px;
+  margin: auto;
 }
 
 #header {
-	height: 60px;
+  height: 60px;
 }
 
 #content {
-	overflow:hidden;
+  overflow: hidden;
 }
 
 #viz {
-	float:right;
-	width: 625px;
+  float: right;
+  width: 625px;
 }
 
 #tabs {
-	height: 58px;
+  height: 58px;
 }
 
 #chart {
-	height: 471px;
-	position:relative;
+  height: 471px;
+  position: relative;
 }
 
 #sidebar {
-	/*margin-top: 40px;*/
-	overflow:hidden;
-	padding-right: 15px;
+  /*margin-top: 40px;*/
+  overflow: hidden;
+  padding-right: 15px;
 }
 
 #dimension_test {
-	position:absolute;
-	left:-10000px;
-	line-height:normal;
+  position: absolute;
+  left: -10000px;
+  line-height: normal;
 }
 
 .node {
-	position: absolute;
-	overflow: hidden;
-	color: #FFFFFF;
-	display: table;
-	z-index:-1;
+  position: absolute;
+  overflow: hidden;
+  color: #ffffff;
+  display: table;
+  z-index: -1;
 }
 
 .node p {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	line-height: 18px;
-	margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 18px;
+  margin: 0;
 }
 
 .node-title {
-	font-size: 17px;
+  font-size: 17px;
 }
 
 .popover {
-	max-width: 400px;
-	z-index:1;
-	display:none;
-	filter: alpha(opacity=0); /* internet explorer */
-	-khtml-opacity: 0.0;      /* khtml, old safari */
-	-moz-opacity: 0.0;       /* mozilla, netscape */
-	opacity: 0.0;           /* fx, safari, opera */
+  max-width: 400px;
+  z-index: 1;
+  display: none;
+  filter: alpha(opacity=0); /* internet explorer */
+  -khtml-opacity: 0.0;      /* khtml, old safari */
+  -moz-opacity: 0.0;       /* mozilla, netscape */
+  opacity: 0.0;           /* fx, safari, opera */
 }
 
 .popover-title {
-	color: #FFFFFF;
+  color: #ffffff;
 }
 
 .node-target {
-	position: absolute;
-	z-index:2;
-	background: #FFFFFF;
-	filter: alpha(opacity=0); /* internet explorer */
-	-khtml-opacity: 0.0;      /* khtml, old safari */
-	-moz-opacity: 0.0;       /* mozilla, netscape */
-	opacity: 0.0;           /* fx, safari, opera */
-	cursor:pointer;
+  position: absolute;
+  z-index: 2;
+  background: #ffffff;
+  filter: alpha(opacity=0); /* internet explorer */
+  -khtml-opacity: 0.0;      /* khtml, old safari */
+  -moz-opacity: 0.0;       /* mozilla, netscape */
+  opacity: 0.0;           /* fx, safari, opera */
+  cursor: pointer;
 }
 
-#notes_modal, #sources_modal {
-	display:none;
+#notes_modal,
+#sources_modal {
+  display: none;
 }
 
 .modal-body {
-	max-height: 350px;
+  max-height: 350px;
 }
 
 #total_label {
-	margin:0;
+  margin: 0;
 }
 
 #total_value {
-	margin:0;
-	line-height: 32px;
+  margin: 0;
+  line-height: 32px;
 }
 
 .modal-backdrop {
-	background-color: #FFF;
+  background-color: #fff;
 }
 
-.modal-backdrop, .modal-backdrop.fade.in {
-	opacity: 0.5;
+.modal-backdrop,
+.modal-backdrop.fade.in {
+  opacity: 0.5;
 }
 
 /* TAB TWEAKS */
 
 .nav-tabs {
-	border-bottom: 1px solid #999;
+  border-bottom: 1px solid #999;
 }
 
 ul.nav {
-	font-size:14px;
+  font-size: 14px;
 }
 
 .nav-tabs li {
-	margin-right:4px;
+  margin-right: 4px;
 }
 
 .nav-tabs li a {
-	background-color: #F0F0F0;
-	border: 1px solid #AAA;
-
-
+  background-color: #f0f0f0;
+  border: 1px solid #aaa;
 }
 
-.nav-tabs li a:hover, .nav-tabs li a:focus {
-	background-color: #E7E7E7;
-	border: 1px solid #999;
-	color:#0088CC;
+.nav-tabs li a:hover,
+.nav-tabs li a:focus {
+  background-color: #e7e7e7;
+  border: 1px solid #999;
+  color: #0088cc;
 }
 
-.nav-tabs .active a, .nav-tabs .active a:hover, .nav-tabs .active a:focus {
-	border: 1px solid #999;
-	border-bottom-color: transparent;
-	color: #333;
+.nav-tabs .active a,
+.nav-tabs .active a:hover,
+.nav-tabs .active a:focus {
+  border: 1px solid #999;
+  border-bottom-color: transparent;
+  color: #333;
 }
 
 #pill_list {
-	margin: 0;
+  margin: 0;
 }
 
