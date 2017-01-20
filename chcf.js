@@ -52,6 +52,9 @@ var tree_value = function (d) {
 
 
 var value = function (d) {
+  if (d.id == 'carriers') {
+    return 0;
+  }
   if (current_dim == "total") {
     return data[d.id][current_reg]['individual'] +
       data[d.id][current_reg]['group_sm'] +
@@ -65,6 +68,11 @@ function initGlobal() {
   dimension_test = $("#dimension_test");
   $('#radio_regulator_combined').prop('checked', true);
   $("input").change(function () { setRegulator($(this).val()); });
+
+
+
+
+
 
   $.getJSON('ca_insurance.json', function (d) {
     tree = d.tree;
