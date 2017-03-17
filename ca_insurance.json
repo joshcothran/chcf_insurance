@@ -39,7 +39,7 @@
         "group_lg": 393828,
         "aso": 657248,
         "revenues": 3.691510688,
-        "margin": "CDI: 6.63%, <br/>DMHC: 1.16%",
+        "margin": "CDI: 6.6%, <br/>DMHC: 1.2%",
         "legal_name": "Aetna Life Insurance Company"
       },
       "cdi": {
@@ -59,7 +59,7 @@
         "group_lg": 241612,
         "aso": 0,
         "revenues": 1.835812839,
-        "margin": "1.16%",
+        "margin": "1.2%",
         "legal_name": "Aetna Health of California, Inc."
       }
     },
@@ -73,7 +73,7 @@
         "group_lg": 1292177,
         "aso": 2539730,
         "revenues": 18.6868186,
-        "margin": "CDI: 6.71%, <br/>DMHC: 3.33%",
+        "margin": "CDI: 6.7%, <br/>DMHC: 3.3%",
         "legal_name": "Anthem Blue Cross Life and Health Insurance Company"
       },
       "cdi": {
@@ -83,7 +83,7 @@
         "group_lg": 135830,
         "aso": 2247449,
         "revenues": 3.590215596,
-        "margin": "6.71%",
+        "margin": "6.7%",
         "legal_name": "Anthem Blue Cross Life and Health Insurance Company"
       },
       "dmhc": {
@@ -93,7 +93,7 @@
         "group_lg": 1156347,
         "aso": 292281,
         "revenues": 15.096603,
-        "margin": "3.33%",
+        "margin": "3.3%",
         "legal_name": "Blue Cross of California"
       }
     },
@@ -106,8 +106,8 @@
         "group_sm": 419206,
         "group_lg": 1399298,
         "aso": 820769,
-        "revenues": 14.5007709,
-        "margin": "CDI: 3.11%, <br/>DMHC: 0.66%",
+        "revenues": 14.40234405,
+        "margin": "CDI: 3.1%, <br/>DMHC: 0.7%",
         "legal_name": "Blue Shield of California Life and Health Insurance Company"
       },
       "cdi": {
@@ -117,7 +117,7 @@
         "group_lg": 10656,
         "aso": 0,
         "revenues": 1.245254048,
-        "margin": "3.11%",
+        "margin": "3.1%",
         "legal_name": "Blue Shield of California Life and Health Insurance Company"
       },
       "dmhc": {
@@ -126,8 +126,8 @@
         "group_sm": 419206,
         "group_lg": 1388642,
         "aso": 820769,
-        "revenues": 13.25551685,
-        "margin": "0.66%",
+        "revenues": 13.15709,
+        "margin": "0.7%",
         "legal_name": "California Physicians' Service"
       }
     },
@@ -141,7 +141,7 @@
         "group_lg": 441643,
         "aso": 1635310,
         "revenues": 2.114106354,
-        "margin": "CDI: n/a Connecticut General; 10.0% Cigna Health & Life , <br/>DMHC: -1.94%",
+        "margin": "CDI: n/a Connecticut General; 10.0% Cigna Health & Life,<br/>DMHC: -1.9%",
         "legal_name": "Connecticut General Life Insurance Company & Cigna Health and Life Insurance Company"
       },
       "cdi": {
@@ -161,7 +161,7 @@
         "group_lg": 182479,
         "aso": 0,
         "revenues": 0.958895155,
-        "margin": "-1.94%",
+        "margin": "-1.9%",
         "legal_name": "Cigna HealthCare of California, Inc."
       }
     },
@@ -175,7 +175,7 @@
         "group_lg": 415905,
         "aso": 0,
         "revenues": 15.34806152,
-        "margin": "CDI: 7.31%, <br/>DMHC: -2.5% Health Net of CA; 7.9% Health Net Community Solutions",
+        "margin": "CDI: 7.3%, <br/>DMHC: -2.5% Health Net of CA; 7.9% Health Net Community Solutions",
         "legal_name": "Health Net Life Insurance Company"
       },
       "cdi": {
@@ -185,7 +185,7 @@
         "group_lg": 20304,
         "aso": 0,
         "revenues": 0.996529455,
-        "margin": "7.31%",
+        "margin": "7.3%",
         "legal_name": "Health Net Life Insurance Company"
       },
       "dmhc": {
@@ -208,8 +208,8 @@
         "group_sm": 712489,
         "group_lg": 4817012,
         "aso": 140009,
-        "revenues": 47.77802541,
-        "margin": "CDI: 5.72%, <br/>DMHC: 3.06%",
+        "revenues": 47.69787271,
+        "margin": "CDI: 5.7%, <br/>DMHC: 3.1%",
         "legal_name": "Kaiser Permanente Insurance Company"
       },
       "cdi": {
@@ -219,7 +219,7 @@
         "group_lg": 7404,
         "aso": 140009,
         "revenues": 0.080152694,
-        "margin": "5.72%",
+        "margin": "5.7%",
         "legal_name": "Kaiser Permanente Insurance Company"
       },
       "dmhc": {
@@ -228,8 +228,8 @@
         "group_sm": 711376,
         "group_lg": 4809608,
         "aso": 0,
-        "revenues": 47.69787271,
-        "margin": "3.06%",
+        "revenues": 47.61772002,
+        "margin": "3.1%",
         "legal_name": "Kaiser Foundation Health Plan, Inc. "
       }
     },
@@ -242,7 +242,7 @@
         "group_sm": 82347,
         "group_lg": 327572,
         "aso": 15264,
-        "revenues": 51.4893559,
+        "revenues": 51.70568301,
         "margin": "CDI: n/a, <br/>DMHC: n/a",
         "legal_name": "All Other"
       },
@@ -262,7 +262,7 @@
         "group_sm": 63881,
         "group_lg": 270974,
         "aso": 3988,
-        "revenues": 44.23413773,
+        "revenues": 44.45046484,
         "margin": "n/a",
         "legal_name": "All Other"
       }
@@ -277,7 +277,7 @@
         "group_lg": 589518,
         "aso": 807334,
         "revenues": 8.836589749,
-        "margin": "CDI: 4.53%, <br/>DMHC: 2.28%",
+        "margin": "CDI: 4.5%, <br/>DMHC: 2.3%",
         "legal_name": "UnitedHealthcare Insurance Company & PacifiCare"
       },
       "cdi": {
@@ -287,7 +287,7 @@
         "group_lg": 164823,
         "aso": 807334,
         "revenues": 2.527389309,
-        "margin": "4.53%",
+        "margin": "4.5%",
         "legal_name": "UnitedHealthcare Insurance Company & PacifiCare"
       },
       "dmhc": {
@@ -297,7 +297,7 @@
         "group_lg": 424695,
         "aso": 0,
         "revenues": 6.30920044,
-        "margin": "2.28%",
+        "margin": "2.3%",
         "legal_name": "UHC of California"
       }
     }
@@ -313,7 +313,7 @@
         "group_lg": 393828,
         "aso": 657248,
         "revenues": 3.691510688,
-        "margin": "CDI: 6.63%, <br/>DMHC: 1.16%",
+        "margin": "CDI: 6.6%, <br/>DMHC: 1.2%",
         "legal_name": "Aetna Life Insurance Company"
       },
       "cdi": {
@@ -323,7 +323,7 @@
         "group_lg": 152216,
         "aso": 657248,
         "revenues": 1.855697849,
-        "margin": "6.63%",
+        "margin": "6.6%",
         "legal_name": "Aetna Life Insurance Company"
       },
       "dmhc": {
@@ -333,7 +333,7 @@
         "group_lg": 241612,
         "aso": 0,
         "revenues": 1.835812839,
-        "margin": "1.16%",
+        "margin": "1.2%",
         "legal_name": "Aetna Health of California, Inc."
       }
     },
@@ -347,7 +347,7 @@
         "group_lg": 1292177,
         "aso": 2539730,
         "revenues": 18.6868186,
-        "margin": "CDI: 6.71%, <br/>DMHC: 3.33%",
+        "margin": "CDI: 6.7%, <br/>DMHC: 3.3%",
         "legal_name": "Anthem Blue Cross Life and Health Insurance Company"
       },
       "cdi": {
@@ -357,7 +357,7 @@
         "group_lg": 135830,
         "aso": 2247449,
         "revenues": 3.590215596,
-        "margin": "6.71%",
+        "margin": "6.7%",
         "legal_name": "Anthem Blue Cross Life and Health Insurance Company"
       },
       "dmhc": {
@@ -367,7 +367,7 @@
         "group_lg": 1156347,
         "aso": 292281,
         "revenues": 15.096603,
-        "margin": "3.33%",
+        "margin": "3.3%",
         "legal_name": "Blue Cross of California"
       }
     },
@@ -381,7 +381,7 @@
         "group_lg": 1399298,
         "aso": 820769,
         "revenues": 14.5007709,
-        "margin": "CDI: 3.11%, <br/>DMHC: 0.66%",
+        "margin": "CDI: 3.1%, <br/>DMHC: 0.7%",
         "legal_name": "Blue Shield of California Life and Health Insurance Company"
       },
       "cdi": {
@@ -391,7 +391,7 @@
         "group_lg": 10656,
         "aso": 0,
         "revenues": 1.245254048,
-        "margin": "3.11%",
+        "margin": "3.1%",
         "legal_name": "Blue Shield of California Life and Health Insurance Company"
       },
       "dmhc": {
@@ -401,7 +401,7 @@
         "group_lg": 1388642,
         "aso": 820769,
         "revenues": 13.25551685,
-        "margin": "0.66%",
+        "margin": "0.7%",
         "legal_name": "California Physicians' Service"
       }
     },
@@ -415,7 +415,7 @@
         "group_lg": 441643,
         "aso": 1635310,
         "revenues": 2.114106354,
-        "margin": "CDI: n/a Connecticut General; 10.0% Cigna Health & Life , <br/>DMHC: -1.94%",
+        "margin": "CDI: n/a Connecticut General; 10.0% Cigna Health & Life , <br/>DMHC: -1.9%",
         "legal_name": "Connecticut General Life Insurance Company & Cigna Health and Life Insurance Company"
       },
       "cdi": {
@@ -435,7 +435,7 @@
         "group_lg": 182479,
         "aso": 0,
         "revenues": 0.958895155,
-        "margin": "-1.94%",
+        "margin": "-1.9%",
         "legal_name": "Cigna HealthCare of California, Inc."
       }
     },
@@ -449,7 +449,7 @@
         "group_lg": 415905,
         "aso": 0,
         "revenues": 15.34806152,
-        "margin": "CDI: 7.31%, <br/>DMHC: -2.5% Health Net of CA; 7.9% Health Net Community Solutions",
+        "margin": "CDI: 7.3%, <br/>DMHC: -2.5% Health Net of CA; 7.9% Health Net Community Solutions",
         "legal_name": "Health Net Life Insurance Company"
       },
       "cdi": {
@@ -459,7 +459,7 @@
         "group_lg": 20304,
         "aso": 0,
         "revenues": 0.996529455,
-        "margin": "7.31%",
+        "margin": "7.3%",
         "legal_name": "Health Net Life Insurance Company"
       },
       "dmhc": {
@@ -483,7 +483,7 @@
         "group_lg": 4817012,
         "aso": 140009,
         "revenues": 47.77802541,
-        "margin": "CDI: 5.72%, <br/>DMHC: 3.06%",
+        "margin": "CDI: 5.7%, <br/>DMHC: 3.1%",
         "legal_name": "Kaiser Permanente Insurance Company"
       },
       "cdi": {
@@ -493,7 +493,7 @@
         "group_lg": 7404,
         "aso": 140009,
         "revenues": 0.080152694,
-        "margin": "5.72%",
+        "margin": "5.7%",
         "legal_name": "Kaiser Permanente Insurance Company"
       },
       "dmhc": {
@@ -503,7 +503,7 @@
         "group_lg": 4809608,
         "aso": 0,
         "revenues": 47.69787271,
-        "margin": "3.06%",
+        "margin": "3.1%",
         "legal_name": "Kaiser Foundation Health Plan, Inc. "
       }
     },
@@ -551,7 +551,7 @@
         "group_lg": 589518,
         "aso": 807334,
         "revenues": 8.836589749,
-        "margin": "CDI: 4.53%, <br/>DMHC: 2.28%",
+        "margin": "CDI: 4.5%, <br/>DMHC: 2.3%",
         "legal_name": "UnitedHealthcare Insurance Company & PacifiCare"
       },
       "cdi": {
@@ -561,7 +561,7 @@
         "group_lg": 164823,
         "aso": 807334,
         "revenues": 2.527389309,
-        "margin": "4.53%",
+        "margin": "4.5%",
         "legal_name": "UnitedHealthcare Insurance Company & PacifiCare"
       },
       "dmhc": {
@@ -571,7 +571,7 @@
         "group_lg": 424695,
         "aso": 0,
         "revenues": 6.30920044,
-        "margin": "2.28%",
+        "margin": "2.3%",
         "legal_name": "UHC of California"
       }
     }
